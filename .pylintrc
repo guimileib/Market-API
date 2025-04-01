@@ -7,6 +7,7 @@ disable=
       W0703, # Catching too general exception Exception
       C0209, # No name in module docstring
       E0015, # No return at end of function
+      C0303, # Trailing-whitespace
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists
