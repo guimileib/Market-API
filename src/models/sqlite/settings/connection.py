@@ -9,7 +9,7 @@ class SqliteConnectionHandle:
     def connect(self) -> SqliteConnection:
         conn = sqlite3.connect(
             self.__connection_string, 
-            check_same_thread=False
+            check_same_thread=False # Compartilhar uma conexao entrep multiplas threads | sem espera
         )
         self.__conn = conn # Conexão criado no costrutor sendo retornada
         return conn
